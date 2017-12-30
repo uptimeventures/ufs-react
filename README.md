@@ -22,6 +22,7 @@ import { Input } from '@uptimeventures/ufs-dom'
 const App = () => (
   <Form
     handleSubmit={handleSubmit}
+    validate={validate}
   >
     {({ handleSubmit }) => (
       <Input
@@ -38,6 +39,13 @@ const App = () => (
     )}
   </Form>
 )
+
+const validate = ({ name, email }) => ({
+  name: !name ? 'Please provide your name.' : undefined,
+  email: !email ? 'Please provide your email.' : undefined,
+})
+
+const handleSubmit = values => {}
 ```
 
 ## Why create another form library?
