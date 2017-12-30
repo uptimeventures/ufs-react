@@ -1,6 +1,6 @@
 {
   "name": "@uptimeventures/ufs",
-  "version": "0.1.0-alpha.b38ee479",
+  "version": "0.0.1-0",
   "description": "Core form management utilities for React.",
   "main": "index.js",
   "scripts": {
