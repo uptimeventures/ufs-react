@@ -1,0 +1,30 @@
+{
+  "name": "@uptimeventures/ufs",
+  "version": "0.1.0-alpha.b38ee479",
+  "description": "Core form management utilities for React.",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir . --ignore __tests__",
+    "watch": "babel -w src --out-dir . --ignore __tests__",
+    "prepublish": "cross-env NODE_ENV=production npm run build"
+  },
+  "keywords": [
+    "form",
+    "state",
+    "form management",
+    "react",
+    "component"
+  ],
+  "author": "Nicholas Young <nyoung@uptime.ventures>",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "is-promise": "2.1.0",
+    "prop-types": "15.6.0",
+    "react": "16.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "cross-env": "^5.0.5"
+  }
+}
