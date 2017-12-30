@@ -1,6 +1,6 @@
 # ufs
 
-Part of [Reform](https://github.com/uptimeventures/reform), an elegant, lightweight form library for React and React Native.
+Part of [UFS](https://github.com/uptimeventures/ufs), an elegant, lightweight form library for React and React Native.
 
 See the main module documentation (linked above) for details.
 
