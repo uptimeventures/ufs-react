@@ -1,0 +1,10 @@
+# ufs
+
+Part of [Reform](https://github.com/uptimeventures/reform), an elegant, lightweight form library for React and React Native.
+
+See the main module documentation (linked above) for details.
+
+## License
+
+&copy; 2017 Uptime Ventures, Ltd. All rights reserved. Released under the
+[3-Clause BSD License](LICENSE.md).

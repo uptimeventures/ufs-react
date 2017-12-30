@@ -1,0 +1,17 @@
+language: node_js
+
+services: docker
+
+node_js:
+  - "node"
+
+cache:
+  directories:
+    - node_modules/
+
+jobs:
+  include:
+    - stage: test
+      script: npm run lint
+    - # stage name omitted
+      script: npm run test
