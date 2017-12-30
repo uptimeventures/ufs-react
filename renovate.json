@@ -1,5 +1,15 @@
 {
   "extends": [
     "config:base"
+  ],
+  "timezone": "America/Denver",
+  "labels": [
+    "bot",
+    "deps"
+  ],
+  "rebaseStalePrs": true,
+  "automerge": true,
+  "assignees": [
+    "nicholaswyoung"
   ]
 }
