@@ -1,6 +1,6 @@
 {
   "name": "@uptimeventures/ufs-dom",
-  "version": "0.0.1-1",
+  "version": "0.0.1-2",
   "description": "Core utilities for form management in React.",
   "main": "index.js",
   "scripts": {
