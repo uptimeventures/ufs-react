@@ -15,24 +15,6 @@ export type Props = {
 }
 
 class Textarea extends Component<Props, {}> {
-  get value() {
-    const {
-      value: valueProp,
-      name,
-      api: { values },
-    } = this.props
-
-    if (valueProp) {
-      return valueProp
-    }
-
-    if (values && values.hasOwnProperty(name)) {
-      return values[name]
-    }
-
-    return ''
-  }
-
   render() {
     const {
       api: { handleUpdate },
@@ -44,7 +26,6 @@ class Textarea extends Component<Props, {}> {
       <textarea
         name={name}
         onChange={handleUpdate(name)}
-        value={this.value}
         {...rest}
       />
     )

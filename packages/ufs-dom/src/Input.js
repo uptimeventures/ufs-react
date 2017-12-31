@@ -20,24 +20,6 @@ class Input extends Component<Props, {}> {
     type: 'text',
   }
 
-  get value() {
-    const {
-      value: valueProp,
-      name,
-      api: { values },
-    } = this.props
-
-    if (valueProp) {
-      return valueProp
-    }
-
-    if (values && values.hasOwnProperty(name)) {
-      return values[name]
-    }
-
-    return ''
-  }
-
   render() {
     const {
       api: { handleUpdate },
