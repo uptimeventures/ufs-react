@@ -10,7 +10,7 @@ Elegant, lightweight form validation and processing for React and React Native.
 
 ## Installation
 
-`npm install @uptimeventures/ufs`
+`npm install @uptimeventures/ufs @uptimeventures/ufs-dom`
 
 ## Usage
 
