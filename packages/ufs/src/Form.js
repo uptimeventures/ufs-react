@@ -76,7 +76,7 @@ export default class Form extends Component<Props, State> {
 
   dispatch = () => {
     if (this.props.handleSubmit) {
-      const res = this.props.handleSubmit(this.state.values)
+      const res = this.props.handleSubmit({ ...this.state.values })
 
       if (res !== undefined && isPromise(res)) {
         this.setState({ waiting: true })

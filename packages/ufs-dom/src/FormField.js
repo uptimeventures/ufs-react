@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 export type Props = {
-  name?: string,
-  for?: string,
+  name: string,
 }
 
 function FormField(FieldComponent) {
@@ -18,10 +17,23 @@ function FormField(FieldComponent) {
       }
     }
 
+    get name() {
+      return this.props.name
+    }
+
+    // Update the parent handler when DOM events fire.
+    onChange = (e) => {
+      if (e.target.value) {
+        const name = this.name
+        const { handleUpdate } = this.api
+        handleUpdate(name)(e.target.value)
+      }
+    }
+
     render() {
       return (
         <FieldComponent
-          api={this.api}
+          onChange={this.onChange}
           {...this.props}
         />
       )

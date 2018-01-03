@@ -6,7 +6,7 @@
 
 import React, { type Node, Component } from 'react'
 
-import FormField from './FormField'
+import withAPI from './withAPI'
 
 export type Props = {
   api: Object,
@@ -34,4 +34,4 @@ class Label extends Component<Props, {}> {
   }
 }
 
-export default FormField(Label)
+export default withAPI(Label)
