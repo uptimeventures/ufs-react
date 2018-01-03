@@ -28,7 +28,7 @@
     "react": "16.2.0"
   },
   "peerDependencies": {
-    "@uptimeventures/ufs": "0.1.0"
+    "@uptimeventures/ufs": "*"
   },
   "publishConfig": {
     "access": "public"

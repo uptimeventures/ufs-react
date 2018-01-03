@@ -9,7 +9,6 @@ import React, { Component } from 'react'
 import FormField from './FormField'
 
 export type Props = {
-  api: Object,
   name: string,
   type?: string,
   value?: string,
@@ -21,17 +20,9 @@ class Input extends Component<Props, {}> {
   }
 
   render() {
-    const {
-      api: { handleUpdate },
-      name,
-      ...rest
-    } = this.props
-
     return (
       <input
-        name={name}
-        onChange={handleUpdate(name)}
-        {...rest}
+        {...this.props}
       />
     )
   }
