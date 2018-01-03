@@ -139,7 +139,18 @@ export default class Form extends Component<Props, State> {
 
   componentWillMount() {
     if (this.props.context) {
-      this.setState(this.props.context)
+      const { values = {}, errors = {} } = this.props.context
+      const newState = {}
+
+      if (Object.keys(values).length) {
+        newState.values = values
+      }
+
+      if (Object.keys(errors).length) {
+        newState.errors = errors
+      }
+
+      this.setState(newState)
     }
   }
 
