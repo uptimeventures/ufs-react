@@ -11,23 +11,26 @@ export type Props = {
   name: string,
 }
 
+// $FlowFixMe
 function FormField(FieldComponent) {
   class ConnectedFormField extends Component<Props, {}> {
     static contextTypes = {
       form: PropTypes.object,
     }
 
+    // $FlowFixMe
     get api() {
       return {
         ...this.context.form,
       }
     }
 
-    get name() {
+    get name(): string {
       return this.props.name
     }
 
     // Update the parent handler when DOM events fire.
+    // $FlowFixMe
     onChange = (e) => {
       if (e.target.value) {
         const name = this.name
