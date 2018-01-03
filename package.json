@@ -10,7 +10,8 @@
     "publish": "lerna publish",
     "clean": "lerna clean",
     "lint": "eslint packages/**/src/*.js",
-    "test": "jest"
+    "test": "jest",
+    "flow": "flow"
   },
   "devDependencies": {
     "babel-core": "6.26.0",

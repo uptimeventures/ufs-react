@@ -14,4 +14,6 @@ jobs:
     - stage: test
       script: npm run lint
     - # stage name omitted
+      script: npm run flow
+    - # stage name omitted
       script: npm run test

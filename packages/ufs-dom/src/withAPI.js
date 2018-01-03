@@ -7,12 +7,14 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
+// $FlowFixMe
 function withAPI(WrappedComponent) {
-  class WrappedWithAPI extends Component {
+  class WrappedWithAPI extends Component<null, null> {
     static contextTypes = {
       form: PropTypes.object,
     }
 
+    // $FlowFixMe
     get api() {
       return {
         ...this.context.form,

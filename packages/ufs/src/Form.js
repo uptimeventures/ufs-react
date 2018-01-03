@@ -25,6 +25,20 @@ export type State = {
   errors: Object,
 }
 
+export type AssignedState = {
+  values?: Object,
+  errors?: Object,
+}
+
+export type API = {
+  errors: Object,
+  values: Object,
+  handleSubmit: Function,
+  handleUpdate: Function,
+  success: bool,
+  waiting: bool,
+}
+
 const hasErrors = (errors) => {
   const filtered = Object.keys(errors).filter(e => errors[e])
   if (filtered.length) {
@@ -70,7 +84,7 @@ export default class Form extends Component<Props, State> {
   /**
    * onFailure updates state with errors.
    */
-  onFailure = (errors) => {
+  onFailure = (errors: Object) => {
     this.setState({ waiting: false, errors })
   }
 
@@ -95,7 +109,7 @@ export default class Form extends Component<Props, State> {
    * processing and validating data along the way before
    * submitting it to the server if all fields are valid.
    */
-  handleSubmit = (e) => {
+  handleSubmit = (e: any) => {
     const { preventDefault, validate } = this.props
     const { values } = this.state
 
@@ -116,10 +130,10 @@ export default class Form extends Component<Props, State> {
   /**
    * handleUpdate updates state on field update.
    */
-  handleUpdate = (name) => (value) => {
+  handleUpdate = (name: string) => (value: any) => {
     if (value) {
       const { values, errors } = this.state
-      const nextState = {
+      const nextState: AssignedState = {
         values: {
           ...values,
           [name]: value,
@@ -160,7 +174,7 @@ export default class Form extends Component<Props, State> {
     }
   }
 
-  get api() {
+  get api(): API {
     return {
       handleSubmit: this.handleSubmit,
       handleUpdate: this.handleUpdate,
