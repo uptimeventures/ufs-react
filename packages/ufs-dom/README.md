@@ -1,4 +1,4 @@
-# ufs
+# ufs-dom
 
 Part of [UFS](https://github.com/uptimeventures/ufs), an elegant, lightweight form library for React and React Native.
 
