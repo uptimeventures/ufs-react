@@ -12,7 +12,12 @@ Elegant, lightweight form validation and processing for React and React Native.
 
 `npm install @uptimeventures/ufs @uptimeventures/ufs-dom`
 
-## Usage
+## Getting Started
+
+[UFS comes in two parts:](DESIGN.md) the main wrapping component (`@uptimeventures/ufs`) and
+platform-native visual components (like `@uptimeventures/ufs-dom`). Together,
+these components can be used to create cross-platform user interfaces. Here's a
+brief example:
 
 ```javascript
 import React from 'react'
@@ -36,6 +41,9 @@ const App = () => (
         type="email"
         required
       />
+      <button> {/* Available since we're rendering on DOM */}
+        Submit
+      </button>
     )}
   </Form>
 )
@@ -47,6 +55,9 @@ const validate = ({ name, email }) => ({
 
 const handleSubmit = values => {}
 ```
+
+Eventually, we'll release bindings for React Native. But there's no technical
+constraint in the way.
 
 ## Why create another form library?
 
