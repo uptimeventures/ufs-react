@@ -17,3 +17,6 @@ jobs:
       script: npm run flow
     - # stage name omitted
       script: npm run test
+    - # stage name omitted
+      script: npm run nsp
+

@@ -11,7 +11,8 @@
     "clean": "lerna clean",
     "lint": "eslint packages/**/src/*.js",
     "test": "jest",
-    "flow": "flow"
+    "flow": "flow",
+    "nsp": "nsp check packages/**"
   },
   "devDependencies": {
     "babel-core": "6.26.0",
@@ -38,6 +39,7 @@
     "jest": "22.0.6",
     "jest-cli": "22.0.6",
     "lerna": "2.7.1",
+    "nsp": "^3.1.0",
     "plop": "1.9.1",
     "react": "16.2.0",
     "react-dom": "16.2.0",
