@@ -5,8 +5,7 @@
 // that can be found in LICENSE.md, at the root of this repository.
 
 import React, { type Node, Component } from 'react'
-
-import withAPI from './withAPI'
+import { withAPI } from '@uptimeventures/ufs'
 
 export type Props = {
   api: Object,
