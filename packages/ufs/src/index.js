@@ -5,3 +5,4 @@
 // that can be found in LICENSE.md, at the root of this repository.
 
 export { default } from './Form'
+export { default as withAPI } from './withAPI'
