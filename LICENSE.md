@@ -1,6 +1,6 @@
 3-Clause BSD License
 
-Copyright &copy; 2017, Uptime Ventures, Ltd.
+Copyright 2017, Uptime Ventures, Ltd.
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without

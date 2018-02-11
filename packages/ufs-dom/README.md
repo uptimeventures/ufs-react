@@ -6,5 +6,5 @@ See the main module documentation (linked above) for details.
 
 ## License
 
-&copy; 2017 Uptime Ventures, Ltd. All rights reserved. Released under the
+Copyright 2017 Uptime Ventures, Ltd. All rights reserved. Released under the
 [3-Clause BSD License](LICENSE.md).
