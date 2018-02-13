@@ -12,7 +12,8 @@
     "lint": "eslint packages/**/src/*.js",
     "test": "jest",
     "flow": "flow",
-    "nsp": "nsp check packages/**"
+    "nsp": "nsp check packages/**",
+    "compile": "lerna run build"
   },
   "devDependencies": {
     "babel-core": "6.26.0",
