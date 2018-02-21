@@ -3,6 +3,10 @@
   "version": "0.3.0",
   "description": "Core utilities for form management in React.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:uptimeventures/ufs.git"
+  },
   "scripts": {
     "build": "babel src --out-dir . --ignore __tests__",
     "watch": "babel -w src --out-dir . --ignore __tests__",
