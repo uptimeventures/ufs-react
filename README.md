@@ -57,6 +57,9 @@ const validate = ({ name, email }) => ({
 const handleSubmit = values => {}
 ```
 
+In fact, you can break down components even further: `<Form/>` accepts a
+`component` prop that makes the syntax above even cleaner.
+
 Eventually, we'll release bindings for React Native. But there's no technical
 constraint in the way.
 
