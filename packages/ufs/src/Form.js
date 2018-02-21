@@ -4,7 +4,7 @@
 // Use of this source code is governed by a BSD-style license
 // that can be found in LICENSE.md, at the root of this repository.
 
-import { Component } from 'react'
+import { Component, createElement } from 'react'
 import PropTypes from 'prop-types'
 import isPromise from 'is-promise'
 
@@ -14,6 +14,7 @@ export type Props = {
   validate?: Function,
   context?: Object,
   handleSubmit?: Function,
+  component: Function,
   render?: Function,
   children?: Function,
 }
@@ -192,7 +193,11 @@ export default class Form extends Component<Props, State> {
   }
 
   render() {
-    const { children, render } = this.props
+    const { component, children, render } = this.props
+
+    if (component) {
+      return createElement(component, this.api)
+    }
 
     if (children) {
       return children(this.api)

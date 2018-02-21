@@ -46,4 +46,47 @@ describe('<UFS/>', () => {
     expect(handleSubmit.called).toBe(true)
     expect(validateSpy.called).toBe(true)
   })
+
+  it('should allow passing a component', () => {
+    const validateSpy = spy()
+
+    const validate = ({ message }) => {
+      validateSpy()
+      return {
+        message: !message ? 'Please include a message' : undefined,
+      }
+    }
+
+    const handleSubmit = spy()
+
+    const InternalForm = ({ handleSubmit, handleUpdate }) => (
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="message"
+          required
+          onChange={handleUpdate('message')}
+        />
+        <button>Submit</button>
+      </form>
+    )
+
+    const rendered = mount(
+      <UFS
+        validate={validate}
+        handleSubmit={handleSubmit}
+        component={InternalForm}
+      />
+    )
+
+    rendered.find('input').simulate('change', {
+      target: {
+        value: 'Hello',
+      }
+    })
+
+    rendered.find('form').simulate('submit')
+    expect(handleSubmit.called).toBe(true)
+    expect(validateSpy.called).toBe(true)
+  })
 })
