@@ -54,5 +54,5 @@ visit [the GitHub page](https://github.com/uptimeventures/ufs).
 
 ## License
 
-Copyright 2017 Uptime Ventures, Ltd. All rights reserved. Released under the
+Copyright 2018 Uptime Ventures, Ltd. All rights reserved. Released under the
 [3-Clause BSD License](LICENSE.md).

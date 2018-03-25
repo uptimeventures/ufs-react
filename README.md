@@ -85,5 +85,5 @@ Uptime Ventures, the Denver, Colorado digital consultancy.
 
 ## License
 
-Copyright 2017 Uptime Ventures, Ltd. All rights reserved. Released under the
+Copyright 2018 Uptime Ventures, Ltd. All rights reserved. Released under the
 [3-Clause BSD License](LICENSE.md).
