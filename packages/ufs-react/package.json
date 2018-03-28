@@ -1,5 +1,5 @@
 {
-  "name": "@uptimeventures/ufs",
+  "name": "@uptimeventures/ufs-react",
   "version": "0.4.1",
   "description": "Core form management utilities for React.",
   "main": "index.js",
