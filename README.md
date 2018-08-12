@@ -2,7 +2,6 @@
 
 [![CI Status
 Badge](https://travis-ci.org/uptimeventures/ufs.svg?branch=master)](https://travis-ci.org/uptimeventures/ufs)
-[![NSP Status](https://nodesecurity.io/orgs/uptimeventures/projects/c67bd565-7321-462b-893d-2fd844c0d9c6/badge)](https://nodesecurity.io/orgs/uptimeventures/projects/c67bd565-7321-462b-893d-2fd844c0d9c6)
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![Made by Uptime Ventures
 badge](https://img.shields.io/badge/made_by-Uptime_Ventures-fcb040.svg)](https://www.uptime.ventures)
