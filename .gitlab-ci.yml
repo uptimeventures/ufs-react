@@ -4,7 +4,7 @@ cache:
   key: "$CI_JOB_NAME-$CI_COMMIT_REF_SLUG"
 
 before_script:
-  - npm ci
+  - npm install
 
 stages:
   - test
