@@ -43,6 +43,6 @@
     "react": "16.4.2",
     "react-dom": "16.4.2",
     "react-test-renderer": "16.4.2",
-    "sinon": "6.1.5"
+    "sinon": "6.3.3"
   }
 }
