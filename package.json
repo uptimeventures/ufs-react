@@ -40,9 +40,9 @@
     "jest-cli": "23.5.0",
     "lerna": "2.9.0",
     "plop": "2.1.0",
-    "react": "16.4.2",
-    "react-dom": "16.4.2",
-    "react-test-renderer": "16.4.2",
+    "react": "16.5.1",
+    "react-dom": "16.5.1",
+    "react-test-renderer": "16.5.1",
     "sinon": "6.3.3"
   }
 }
