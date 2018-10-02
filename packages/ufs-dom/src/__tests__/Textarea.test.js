@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
 
-import UFS from '../../../ufs/src'
+import UFS from '@uptimeventures/ufs-react'
 import Textarea from '../Textarea'
 
 describe('<Textarea/>', () => {
