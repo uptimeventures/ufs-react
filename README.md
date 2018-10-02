@@ -10,18 +10,18 @@ Elegant, lightweight form validation and processing for React and React Native.
 
 ## Installation
 
-`npm install @uptimeventures/ufs @uptimeventures/ufs-dom`
+`npm install @uptimeventures/ufs-react @uptimeventures/ufs-dom`
 
 ## Getting Started
 
-[UFS comes in two parts:](DESIGN.md) the main wrapping component (`@uptimeventures/ufs`) and
+[UFS comes in two parts:](DESIGN.md) the main wrapping component (`@uptimeventures/ufs-react`) and
 platform-native visual components (like `@uptimeventures/ufs-dom`). Together,
 these components can be used to create cross-platform user interfaces. Here's a
 brief example:
 
 ```javascript
 import React from 'react'
-import Form from '@uptimeventures/ufs'
+import Form from '@uptimeventures/ufs-react'
 import { Input } from '@uptimeventures/ufs-dom'
 
 const App = () => (
