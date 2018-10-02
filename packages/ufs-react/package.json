@@ -22,10 +22,10 @@
   "author": "Nicholas Young <nyoung@uptime.ventures>",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "babel-runtime": "^6.26.0",
-    "is-promise": "^2.1.0",
-    "prop-types": "^15.6.0",
-    "react": "^16.2.0"
+    "babel-runtime": "6.26.0",
+    "is-promise": "2.1.0",
+    "prop-types": "15.6.0",
+    "react": "16.5.1"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",

@@ -22,9 +22,9 @@
   "author": "Nicholas Young <nyoung@uptime.ventures>",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "babel-runtime": "^6.26.0",
-    "prop-types": "^15.6.0",
-    "react": "^16.2.0"
+    "babel-runtime": "6.26.0",
+    "prop-types": "15.6.0",
+    "react": "16.5.1"
   },
   "devDependencies": {
     "@uptimeventures/ufs-react": "^0.4.1",
