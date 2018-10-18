@@ -24,7 +24,7 @@
   "dependencies": {
     "babel-runtime": "6.26.0",
     "prop-types": "15.6.2",
-    "react": "16.5.1"
+    "react": "16.5.2"
   },
   "devDependencies": {
     "@uptimeventures/ufs-react": "^0.4.1",
