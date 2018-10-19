@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:uptimeventures/ufs.git"
+    "url": "https://gitlab.com/uptimeventures/ufs-react"
   },
   "scripts": {
     "build": "babel src --out-dir . --ignore __tests__",
@@ -27,7 +27,7 @@
     "react": "16.5.2"
   },
   "devDependencies": {
-    "@uptimeventures/ufs-react": "^0.4.1",
+    "@uptimeventures/ufs-react": "*",
     "babel-cli": "6.26.0",
     "cross-env": "5.2.0"
   },

@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:uptimeventures/ufs.git"
+    "url": "https://gitlab.com/uptimeventures/ufs-react"
   },
   "scripts": {
     "build": "babel src --out-dir . --ignore __tests__",
